@@ -1,3 +1,4 @@
+import React from "react"
 import { useEffect, useState } from 'react';
 import { portfolioData } from './data/portfolioData';
 import Navbar from './components/Navbar';

@@ -1,3 +1,4 @@
+import React from "react";
 import { FaGithub,FaLinkedin } from "react-icons/fa";
 import { SiGmail,SiTryhackme } from "react-icons/si";
 import '../styles/hero.css'
