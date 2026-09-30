@@ -1,0 +1,118 @@
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about {
+  padding: 60px 0 100px;
+  background: #030914;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-container {
+
+  width: min(1500px, 90%);
+  margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.about .section-heading {
+  margin-bottom: 35px;
+}
+
+.about .section-heading h2 {
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.about .heading-line {
+  width: 60px;
+  height: 3px;
+  margin-top: 14px;
+  background: #00b7ff;
+  box-shadow:
+    0 0 12px rgba(0, 183, 255, 0.55);
+}
+
+
+/* =========================================================
+   ABOUT CONTENT
+========================================================= */
+
+.about-content {
+  display: block;
+  width: 100%;
+}
+
+
+/* =========================================================
+   ABOUT TEXT
+========================================================= */
+
+.about-text {
+  width: 100%;
+  max-width: 1500px;
+}
+
+.about-text p {
+  color: #bac3cd;
+  font-size: 25px;
+  line-height: 1.9;
+  margin:0;
+  text-align: left;
+  width: 100%;
+}
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-content {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .about-highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about {
+    padding: 80px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    min-height: auto;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,225 @@
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+  position: relative;
+
+  padding: 90px 0;
+
+  background: linear-gradient(rgba(2,7,17,0.55),rgba(3,9,20));
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+
+.contact-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1500px, 90%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.contact .section-heading {
+  margin-bottom: 55px;
+}
+
+
+.contact .section-heading h2 {
+  color: #ffffff;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  font-weight: 800;
+}
+
+.contact .heading-line {
+  width: 55px;
+  height: 3px;
+
+  margin-top: 14px;
+
+  background: #00b7ff;
+
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.55);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.contact-content {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.contact-text h3 {
+  color: #ffffff;
+
+  font-size: 30px;
+
+  line-height: 1.4;
+
+  margin-bottom: 15px;
+}
+
+.contact-text p {
+  color: #91a2b4;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CONTACT LINKS
+========================================================= */
+
+.contact-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.contact-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 17px 25px;
+
+  border: 1px solid rgba(0, 183, 255, 0.17);
+
+  border-radius: 6px;
+
+  background: rgba(8, 22, 37, 0.75);
+
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: rgba(0, 183, 255, 0.5);
+
+  transform: translateX(5px);
+
+  background: rgba(0, 183, 255, 0.05);
+}
+
+
+/* Icon */
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0, 183, 255, 0.35);
+
+  border-radius: 5px;
+
+  color: #f2f6f8;
+
+  background: rgba(0, 183, 255, 0.06);
+}
+
+
+/* Info */
+
+.contact-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+.contact-info small {
+  color: #f2f6fa;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+.contact-info strong {
+  color: #c3d0dc;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  overflow-wrap: anywhere;
+}
+
+.contact-arrow {
+  color: #e2e7eb;
+
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .contact-content {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .contact {
+    padding: 80px 0;
+  }
+
+  .contact .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .contact-text h3 {
+    font-size: 22px;
+  }
+
+  .contact-card {
+    padding: 15px;
+  }
+}

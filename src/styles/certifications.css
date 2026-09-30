@@ -1,0 +1,303 @@
+/* =========================================================
+   CERTIFICATIONS SECTION
+========================================================= */
+
+.certifications {
+
+  padding: 90px 0 100px;
+
+  background: #030914;
+}
+
+
+
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.certifications-container {
+
+  width: min(1500px, 90%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.certifications .section-heading {
+  margin-bottom: 45px;
+}
+
+/* .certifications .section-heading span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #00b7ff;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+} */
+
+.certifications .section-heading h2 {
+  color: #ffffff;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.certifications .heading-line {
+  width: 55px;
+  height: 3px;
+
+  margin-top: 14px;
+
+  background: #00b7ff;
+
+  box-shadow:
+    0 0 12px rgba(0, 183, 255, 0.55);
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.certifications-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.certification-card {
+
+  min-height: 220px;
+
+  padding: 28px 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  border: 1px solid rgba(0, 183, 255, 0.17);
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(9, 25, 42, 0.82),
+      rgba(3, 10, 20, 0.96)
+    );
+
+  box-shadow:
+    inset 0 0 30px rgba(0, 130, 255, 0.025);
+
+
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(0, 183, 255, 0.5);
+
+  box-shadow:
+    0 14px 35px rgba(0, 120, 255, 0.08),
+    0 0 20px rgba(0, 183, 255, 0.06);
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+/* .certification-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+} */
+
+
+/* Icon */
+
+.certification-icon {
+  width: 48px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0, 183, 255, 0.4);
+
+  border-radius: 6px;
+
+  background: rgba(0, 183, 255, 0.06);
+
+  color: #ebeced;
+
+  font-size: 20px;
+}
+
+
+
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.certification-content {
+  margin-top: 25px;
+}
+
+.certification-content h3 {
+  /* max-width: 450px; */
+
+  color: #ffffff;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.certification-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 12px;
+
+  color: #f5f8fb;
+
+  font-size: 15px;
+}
+
+.certification-meta svg {
+  color: #5aa9c8;
+
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   BOTTOM ACCENT
+========================================================= */
+
+.certification-button {
+  width:fit-content;
+  height: 45px;
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 25px;
+
+  padding: 9px 15px;
+
+  border: 1px solid rgba(126, 160, 190, 0.1);
+  border-radius: 8px;
+  background: rgba(0,183,255,0.06);
+
+  color: #fff;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25 ease;
+
+  letter-spacing: 1.2px;
+}
+
+.certification-button:hover {
+  background: rgba(0, 183, 255, 0.12);
+  border-color: #00b7ff;
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-card {
+    min-height: 200px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .certifications {
+    padding: 80px 0;
+  }
+
+  .certifications .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .certification-card {
+    padding: 22px;
+  }
+
+  .certification-content h3 {
+    font-size: 16px;
+  }
+
+  .certification-number {
+    font-size: 20px;
+  }
+}
